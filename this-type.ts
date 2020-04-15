@@ -23,3 +23,5 @@ const resBasicCalc = new BasicCalculator(10)
   .add(5)
   .currentValue();
 console.log(resBasicCalc);
+
+export{};

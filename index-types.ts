@@ -1,9 +1,19 @@
-interface Bird {
+type Duck1 = {
+  colors: string;
+  feathers: number;
+}
+
+type DuckProps = keyof Duck1; // = 'colors' | 'feathers'
+type ColorType = Duck1['colors']; // = string
+type DuckValues = Duck1[DuckProps]; // = string | number
+
+
+interface Bird1 {
   name: string;
   weight: number;
 }
 
-const bird: Bird = {
+const bird: Bird1 = {
   name: 'Tikku',
   weight: 10.5
 };
